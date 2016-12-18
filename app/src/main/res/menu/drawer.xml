@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/section_general"
+        android:title="Allgemein">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/drawer_overview"
+                    android:icon="@drawable/ic_home_grey_700_18dp"
+                    android:title="@string/title_overview" />
+
+                <item
+                    android:id="@+id/drawer_quizzes"
+                    android:icon="@drawable/ic_help_grey_700_18dp"
+                    android:title="@string/start_a_quiz" />
+
+                <item
+                    android:id="@+id/drawer_quiz_result"
+                    android:icon="@drawable/ic_equalizer_grey_700_18dp"
+                    android:title="@string/show_quiz_results" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/section_advanced"
+        android:title="Erweitert">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/drawer_account_settings"
+                    android:icon="@drawable/ic_account_circle_grey_700_18dp"
+                    android:title="@string/account_settings" />
+
+                <item
+                    android:id="@+id/drawer_switch_user"
+                    android:icon="@drawable/ic_exit_to_app_grey_700_18dp"
+                    android:title="@string/switch_user" />
+
+                <item
+                    android:id="@+id/drawer_license"
+                    android:icon="@drawable/ic_info_outline_grey_700_18dp"
+                    android:title="@string/licenses" />
+            </group>
+        </menu>
+    </item>
+</menu>

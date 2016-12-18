@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGrey">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/quizCategorySpinner"
+            android:layout_width="163dp"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/btnLanguage"
+            android:layout_toStartOf="@+id/btnLanguage"
+            android:spinnerMode="dropdown" />
+
+        <ImageButton
+            android:id="@+id/btnLanguage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/lightGrey"
+            android:src="@drawable/ic_language_grey_700_36dp" />
+
+    </RelativeLayout>
+
+    <at.alexnavratil.navhelper.data.RecyclerViewAdvanced
+        android:id="@+id/quizListRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:scrollbars="vertical" />
+
+    <ProgressBar
+        android:id="@+id/quizListProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/quizListEmptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout2"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/no_quizzes_available"
+        android:visibility="gone" />
+
+</RelativeLayout>
