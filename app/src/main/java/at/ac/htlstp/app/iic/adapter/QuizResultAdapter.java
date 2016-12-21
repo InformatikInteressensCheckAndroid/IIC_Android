@@ -79,8 +79,8 @@ public class QuizResultAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                 shortcodeQuiz = item.getQuiz().getName().substring(0, 1).toUpperCase();
             }
 
-            TextDrawable td = TextDrawable.builder(context).buildRound(shortcodeQuiz, ContextCompat.getColor(context, R.color.materialRed));
-
+            TextDrawable td = TextDrawable.builder().buildRound(shortcodeQuiz, ContextCompat.getColor(context, R.color.materialRed));
+                                                //context
             vh.imageView.setImageDrawable(td);
             vh.titleTextView.setText(item.getQuiz().getName());
             vh.dateTextView.setText(sdf.format(item.getStartStamp()));

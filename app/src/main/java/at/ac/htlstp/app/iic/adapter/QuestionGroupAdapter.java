@@ -71,8 +71,8 @@ public class QuestionGroupAdapter extends RecyclerView.Adapter<RecyclerView.View
             shortcodeQuiz = item.getTitle().substring(0, 1).toUpperCase();
         }
 
-        TextDrawable td = TextDrawable.builder(context).buildRound(shortcodeQuiz, ContextCompat.getColor(context, R.color.materialRed));
-
+        TextDrawable td = TextDrawable.builder().buildRound(shortcodeQuiz, ContextCompat.getColor(context, R.color.materialRed));
+                                            //context
         vh.imageView.setImageDrawable(td);
         vh.titleTextView.setText(item.getTitle());
         vh.answerNumberView.setText(String.format(context.getString(R.string.x_of_x_answered), getAnsweredQuestionsNumber(item), getNumberOfQuestions(item)));
