@@ -15,7 +15,7 @@ import at.ac.htlstp.app.iic.parser.JsonMapParser;
  * Created by alexnavratil on 29/12/15.
  */
 public class CocoLibSingleton {
-    public static final String URL = "http://iic.htlstp.ac.at/api/v1/";
+    public static final String URL = "https://iic-test.htlstp.ac.at/api/v1/";
     private static Map<Context, CocoLib> cocoLibMap = new HashMap<>();
 
     public static synchronized CocoLib getInstance(Context context) {
