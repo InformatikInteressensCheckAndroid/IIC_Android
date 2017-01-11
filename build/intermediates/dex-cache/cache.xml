@@ -12,15 +12,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.github.lzyzsd/circleprogress/1.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="e6f9fb0d2ea982d656d6dca785a9097659395874">
-        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.lzyzsd-circleprogress-1.1.0_ab8392f689f21da478b60a50ed2affc0a275e811/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -39,6 +30,114 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
+        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.2.0_135c20829a8b2751f438b95e694b485330e483fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a0ad88bf74d429cbf761c135b666293c02739497">
+        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_9829fcc67fe93c600f49907f18a569753b9c2871/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="2a24cba08e1d865a79e61335f5a1bd64d520106d">
+        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/me.zhanghai.android.materialprogressbar-library-1.1.4_e3cccad642c491fef1c4cd174b311a6abe04b1a1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
+        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/de.hdodenhof-circleimageview-2.0.0_f952bf5c46fe5702bf4b33d6fa23d5513f2979bc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/libs/internal_impl-23.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="6e239441500605809818997dd63b62a947195f8c">
+        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.2.0_3b65d098f5dd595fb0f88ba8c4f62ebad6a38d77/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.android.databinding/library/1.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
+        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.databinding-library-1.2.1_1b9d336d39db68c190dddfec12cc6ca87afba9e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_2709cb64887f6d2a1cd56fea87b0734363821ff6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
+        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.2.0_807d2eda2d6534e3d7ebd9e8dcf20cf26ca61c45/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Matthias/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.7.1/4127b62db028f981e81caa248953c0899d720f98/jackson-core-2.7.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="4127b62db028f981e81caa248953c0899d720f98">
+        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-core-2.7.1_23e5df01ceb8dd6fedcf9212688d6421d27f5946/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="292a9fa091757208efa65e77eef63088247e51f3">
+        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.2.0_7fb7f04741b8f9c879506752e2cfe04d10576c1c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Matthias/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.0/support-annotations-23.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
+        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.2.0_108ca5b36c4739d1a801ffe6867df1dbe95e547b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.github.lzyzsd/circleprogress/1.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="e6f9fb0d2ea982d656d6dca785a9097659395874">
+        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.lzyzsd-circleprogress-1.1.0_ab8392f689f21da478b60a50ed2affc0a275e811/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -52,7 +151,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="5b1d9e3b7aa5cf7d46ca43d3886d0c34d3d64bcd">
+        sha1="7512fa2ba231acc887fcdaabaad2f3a70150a5d7">
         <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_92fcede4ab20e163b73b56098ced755418152314/classes.dex" />
     </item>
     <item
@@ -63,15 +162,6 @@
         revision="23.0.2"
         sha1="381bac8a9251eea3b6a1e12c77d54dd946ad449d">
         <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-databind-2.7.1-1_2cf3fe6d0456cd487ce4ca7d49a03dff0574a714/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
-        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.2.0_135c20829a8b2751f438b95e694b485330e483fb/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -93,30 +183,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="04d98e508178985cc805d47aa2040a464cb0749a">
-        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_9829fcc67fe93c600f49907f18a569753b9c2871/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.inthecheesefactory.thecheeselibrary/adjustable-imageview/1.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
         sha1="ba62e5c890425d760d057aac01220dda94b271cb">
         <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.inthecheesefactory.thecheeselibrary-adjustable-imageview-1.0.1_61d8dceade4d58404301fba0dbb8c31bf1ef0885/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.4/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="2a24cba08e1d865a79e61335f5a1bd64d520106d">
-        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/me.zhanghai.android.materialprogressbar-library-1.1.4_e3cccad642c491fef1c4cd174b311a6abe04b1a1/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -156,33 +228,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
-        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/de.hdodenhof-circleimageview-2.0.0_f952bf5c46fe5702bf4b33d6fa23d5513f2979bc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/libs/internal_impl-23.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="6e239441500605809818997dd63b62a947195f8c">
-        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.2.0_3b65d098f5dd595fb0f88ba8c4f62ebad6a38d77/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.android.databinding/library/1.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
-        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.databinding-library-1.2.1_1b9d336d39db68c190dddfec12cc6ca87afba9e7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/Matthias/.gradle/caches/modules-2/files-2.1/org.threeten/threetenbp/1.3.1/5769e9c27cd5ba74cd3a73785dde0bbb5a2d3c0d/threetenbp-1.3.1.jar"
         jumboMode="true"
         optimize="true"
@@ -192,30 +237,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
-        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_2709cb64887f6d2a1cd56fea87b0734363821ff6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
         sha1="d4c4b83de2f6412072d2a29b1b7a5b03edaad5ff">
         <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/io.reactivex-rxandroid-1.1.0_db9ce7e10fa1ef55fa68be6ae5dd992ad3aab143/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
-        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.2.0_807d2eda2d6534e3d7ebd9e8dcf20cf26ca61c45/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -237,15 +264,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Matthias/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.7.1/4127b62db028f981e81caa248953c0899d720f98/jackson-core-2.7.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="4127b62db028f981e81caa248953c0899d720f98">
-        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-core-2.7.1_23e5df01ceb8dd6fedcf9212688d6421d27f5946/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/Matthias/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.7.1/8b93f301823b79033fcbe873779b3d84f9730fc1/jackson-annotations-2.7.1.jar"
         jumboMode="true"
         optimize="true"
@@ -261,24 +279,6 @@
         revision="23.0.2"
         sha1="8cad34a1d9e891992e9bcf06f06f0596fa936471">
         <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/8/volley_e15ea56a83753ba2bf6efa803c9dd6985358ffef/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="292a9fa091757208efa65e77eef63088247e51f3">
-        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.2.0_7fb7f04741b8f9c879506752e2cfe04d10576c1c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Matthias/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.0/support-annotations-23.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
-        <dex dex="/Users/Matthias/Documents/Schule/Projekt_IIC/IIC_Android/IIC_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.2.0_108ca5b36c4739d1a801ffe6867df1dbe95e547b/classes.dex" />
     </item>
 
 </items>
