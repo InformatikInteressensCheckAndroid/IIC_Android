@@ -1,8 +1,9 @@
 package at.ac.htlstp.app.cocolib.exception;
 
 /**
- * Created by alexnavratil on 03/12/15.
+ * Created by Matthias on 11.01.17.
  */
+
 public class ValidatorException extends RuntimeException {
     public ValidatorException() {
     }
@@ -11,3 +12,4 @@ public class ValidatorException extends RuntimeException {
         super(message);
     }
 }
+
