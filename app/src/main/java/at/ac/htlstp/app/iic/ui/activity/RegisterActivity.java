@@ -1,5 +1,6 @@
 package at.ac.htlstp.app.iic.ui.activity;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -33,6 +34,15 @@ public class RegisterActivity extends AppCompatActivity
     private CocoLib mCocoLib;
     private UserController mUserController;
 
+    private class BackgroundTask extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            mCocoLib = CocoLibSingleton.getInstance(RegisterActivity.this);
+            return null;
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +52,10 @@ public class RegisterActivity extends AppCompatActivity
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        mCocoLib = CocoLibSingleton.getInstance(this);
+        //mCocoLib = CocoLibSingleton.getInstance(this);
+        BackgroundTask backgroundTask = new BackgroundTask();
+        backgroundTask.execute();
+
         mUserController = mCocoLib.create(UserController.class);
 
         initUI();

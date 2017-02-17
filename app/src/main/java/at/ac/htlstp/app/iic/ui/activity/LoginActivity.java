@@ -1,6 +1,8 @@
 package at.ac.htlstp.app.iic.ui.activity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -47,12 +49,33 @@ public class LoginActivity extends AppCompatActivity {
     private UserController mUserController;
     private Realm mRealm;
 
+    private class MyAsyncTask extends AsyncTask<Void, Void, Void>{
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            mCocoLib = CocoLibSingleton.getInstance(LoginActivity.this);
+            return null;
+        }
+    }
+
+    private class ResumeTask extends AsyncTask<Void, Void, Void>{
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            mCocoLib = CocoLibSingleton.getInstance(LoginActivity.this);
+            return null;
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        mCocoLib = CocoLibSingleton.getInstance(LoginActivity.this);
+        MyAsyncTask asyncTask = new MyAsyncTask();
+        asyncTask.execute();
+
+        //new CocoLibSingleton().execute(LoginActivity.this);
 
         ButterKnife.bind(this);
 
@@ -245,7 +268,10 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        mCocoLib = CocoLibSingleton.getInstance(this);
+        //mCocoLib = CocoLibSingleton.getInstance(this);
+        ResumeTask asyncTask = new ResumeTask();
+        asyncTask.execute();
+
         if (mRealm.isClosed()) {
             mRealm = Realm.getInstance(this);
         }

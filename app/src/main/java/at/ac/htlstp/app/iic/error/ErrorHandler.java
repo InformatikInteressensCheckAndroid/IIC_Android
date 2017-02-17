@@ -3,6 +3,7 @@ package at.ac.htlstp.app.iic.error;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 import android.text.Html;
 import android.util.Log;
@@ -141,6 +142,15 @@ public class ErrorHandler {
 
     }
 
+    private static class BackgroundTask extends AsyncTask<Context, Void, CocoLib> {
+
+        @Override
+        protected CocoLib doInBackground(Context... params) {
+            return CocoLibSingleton.getInstance(params[0]);
+
+        }
+    }
+
     private static void handleAuthenticationError(final Context context, IICError error, final Runnable tryAgainRunnable) {
         if (isInternetAvailable(context)) {
             final MaterialDialog dialog = new MaterialDialog.Builder(context)
@@ -152,7 +162,10 @@ public class ErrorHandler {
             Realm realm = Realm.getInstance(context);
             User currentUser = realm.where(User.class).equalTo("isLocalUser", true).findFirst();
 
-            CocoLib cocoLib = CocoLibSingleton.getInstance(context);
+            //CocoLib cocoLib = CocoLibSingleton.getInstance(context);
+            BackgroundTask backgroundTask = new BackgroundTask();
+            CocoLib cocoLib = backgroundTask.doInBackground(context);
+
             UserController userController = cocoLib.create(UserController.class);
 
             userController.authenticate(currentUser).setResultHandler(new ResultHandler<User>() {

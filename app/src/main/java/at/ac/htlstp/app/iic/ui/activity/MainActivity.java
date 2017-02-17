@@ -2,6 +2,7 @@ package at.ac.htlstp.app.iic.ui.activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.design.widget.NavigationView;
@@ -125,12 +126,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+    private class BackgroundTask extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            mCocoLib = CocoLibSingleton.getInstance(MainActivity.this);
+            return null;
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iic_main);
 
         mRealm = Realm.getInstance(this);
+
+        //mCocoLib initialisieren
+        BackgroundTask backgroundTask = new BackgroundTask();
+        backgroundTask.execute();
 
         initUserInterface();
 
@@ -182,9 +196,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         initNavigationDrawer();
 
-        mCocoLib = CocoLibSingleton.getInstance(this);
+        //mCocoLib = CocoLibSingleton.getInstance(this);
 
-        mUserController = mCocoLib.create(UserController.class);
+        try{
+            mUserController = mCocoLib.create(UserController.class);
+        }catch(Throwable ex){
+            ex.printStackTrace();
+        }
+
+        System.out.println("mUserController: " + mUserController.toString());
     }
 
     private void initNavigationDrawer() {

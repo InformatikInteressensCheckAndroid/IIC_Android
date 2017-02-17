@@ -2,6 +2,7 @@ package at.ac.htlstp.app.iic.ui.fragment;
 
 import android.content.Context;
 import android.databinding.DataBindingUtil;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -119,6 +120,15 @@ public class AccountFragment extends IICFragment {
         }
     }
 
+    private class BackgroundTask extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            mCocoLib = CocoLibSingleton.getInstance(getContext());
+            return null;
+        }
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -134,7 +144,10 @@ public class AccountFragment extends IICFragment {
             mUser = new User();
         }
 
-        mCocoLib = CocoLibSingleton.getInstance(getContext());
+        //mCocoLib = CocoLibSingleton.getInstance(getContext());
+        BackgroundTask backgroundTask = new BackgroundTask();
+        backgroundTask.execute();
+
         mLanguageController = mCocoLib.create(LanguageController.class);
         mSchoolClassController = mCocoLib.create(SchoolClassController.class);
 

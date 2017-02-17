@@ -10,8 +10,10 @@ import android.widget.AdapterView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.List;
 
 import at.ac.htlstp.app.cocolib.APIResult;
@@ -49,8 +51,10 @@ public class DebugActivity extends AppCompatActivity {
         mClassSpinner = (Spinner) findViewById(R.id.classSpinner);
 
         try {
-            coco = new CocoLib(new CocoLibConfiguration(this, new JsonMapParser(), new URI("https://iic15.alexnavratil.ovh/api/v1/")));
-        } catch (URISyntaxException e) {
+            coco = new CocoLib(new CocoLibConfiguration(this, new JsonMapParser(), new URL("https://iic15.alexnavratil.ovh/api/v1/")));
+        //} catch (URISyntaxException e) {
+        //    e.printStackTrace();
+        } catch (MalformedURLException e) {
             e.printStackTrace();
         }
         final SchoolClassController schoolController = coco.create(SchoolClassController.class);

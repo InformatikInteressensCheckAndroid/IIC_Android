@@ -1,6 +1,7 @@
 package at.ac.htlstp.app.iic.ui.activity;
 
 import android.graphics.Color;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -77,6 +78,15 @@ public class QuizResultActivity extends AppCompatActivity implements WebViewFull
         return -c * (t /= d) * (t - 2) + b;
     }
 
+    private class BackgroundTask extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            mCocoLib = CocoLibSingleton.getInstance(QuizResultActivity.this);
+            return null;
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -94,7 +104,10 @@ public class QuizResultActivity extends AppCompatActivity implements WebViewFull
             finish();
         }
 
-        mCocoLib = CocoLibSingleton.getInstance(this);
+        //mCocoLib = CocoLibSingleton.getInstance(this);
+        BackgroundTask backgroundTask = new BackgroundTask();
+        backgroundTask.execute();
+
         mQuizController = mCocoLib.create(QuizController.class);
 
         percentProgress.setFinishedStrokeColor(Color.WHITE);

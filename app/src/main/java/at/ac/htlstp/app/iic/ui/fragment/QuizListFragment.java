@@ -1,5 +1,6 @@
 package at.ac.htlstp.app.iic.ui.fragment;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
@@ -74,6 +75,15 @@ public class QuizListFragment extends IICFragment {
         super.onCreate(savedInstanceState);
     }
 
+    private class BackgroundTask extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            mCocoLib = CocoLibSingleton.getInstance(getContext());
+            return null;
+        }
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.quiz_list_fragment, container, false);
@@ -83,7 +93,10 @@ public class QuizListFragment extends IICFragment {
         super.title = getContext().getString(R.string.quizzes);
         super.action_key = MainActivity.FRAGMENT_KEY_QUIZ_LIST;
 
-        mCocoLib = CocoLibSingleton.getInstance(getContext());
+        //mCocoLib = CocoLibSingleton.getInstance(getContext());
+        BackgroundTask backgroundTask = new BackgroundTask();
+        backgroundTask.execute();
+
         mQuizController = mCocoLib.create(QuizController.class);
         mLanguageController = mCocoLib.create(LanguageController.class);
         mCurrentUser = UserDAO.getCurrentUser(getContext());

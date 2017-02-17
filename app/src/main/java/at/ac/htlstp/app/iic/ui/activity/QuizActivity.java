@@ -1,6 +1,7 @@
 package at.ac.htlstp.app.iic.ui.activity;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
@@ -94,6 +95,15 @@ public class QuizActivity extends AppCompatActivity implements QuestionGroupList
     //Stores the CustomViewCallback interface.
     private WebChromeClient.CustomViewCallback mCustomViewCallback;
 
+    private class BackgroundTask extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            mCocoLib = CocoLibSingleton.getInstance(QuizActivity.this);
+            return null;
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -126,7 +136,10 @@ public class QuizActivity extends AppCompatActivity implements QuestionGroupList
             }
         });
 
-        mCocoLib = CocoLibSingleton.getInstance(this);
+        //mCocoLib = CocoLibSingleton.getInstance(this);
+        BackgroundTask backgroundTask = new BackgroundTask();
+        backgroundTask.execute();
+
         mQuizController = mCocoLib.create(QuizController.class);
 
         loadQuizSession();

@@ -78,7 +78,10 @@ public class CocoLib {
             e.printStackTrace();
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
+        } catch (IllegalStateException e){
+            e.printStackTrace();
         }
+
         return controllerObj;
     }
 

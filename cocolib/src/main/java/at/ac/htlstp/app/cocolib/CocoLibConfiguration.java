@@ -3,6 +3,7 @@ package at.ac.htlstp.app.cocolib;
 import android.content.Context;
 
 import java.net.URI;
+import java.net.URL;
 
 import at.ac.htlstp.app.cocolib.parse.MapParser;
 
@@ -17,13 +18,13 @@ import at.ac.htlstp.app.cocolib.parse.MapParser;
  */
 public class CocoLibConfiguration {
     private MapParser mapParser;
-    private URI APIUrl;
+    private URL APIUrl;
     private Context context;
 
     public CocoLibConfiguration() {
     }
 
-    public CocoLibConfiguration(Context context, MapParser mapParser, URI APIUrl) {
+    public CocoLibConfiguration(Context context, MapParser mapParser, URL APIUrl) {
         this.mapParser = mapParser;
         this.APIUrl = APIUrl;
         this.context = context;
@@ -38,11 +39,11 @@ public class CocoLibConfiguration {
         return this;
     }
 
-    public URI getAPIUrl() {
+    public URL getAPIUrl() {
         return APIUrl;
     }
 
-    public CocoLibConfiguration setAPIUrl(URI APIUrl) {
+    public CocoLibConfiguration setAPIUrl(URL APIUrl) {
         this.APIUrl = APIUrl;
         return this;
     }

@@ -2,6 +2,7 @@ package at.ac.htlstp.app.iic.ui.activity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.TabLayout;
@@ -68,6 +69,15 @@ public class QuizPreviewActivity extends AppCompatActivity implements WebViewFul
     //Stores the CustomViewCallback interface.
     private WebChromeClient.CustomViewCallback mCustomViewCallback;
 
+    private class BackgroundTask extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            mCocoLib = CocoLibSingleton.getInstance(QuizPreviewActivity.this);
+            return null;
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,7 +96,10 @@ public class QuizPreviewActivity extends AppCompatActivity implements WebViewFul
             finish();
         }
 
-        mCocoLib = CocoLibSingleton.getInstance(this);
+        //mCocoLib = CocoLibSingleton.getInstance(this);
+        BackgroundTask backgroundTask = new BackgroundTask();
+        backgroundTask.execute();
+
         mQuizController = mCocoLib.create(QuizController.class);
 
         mPreviewCollapsingToolbarLayout.setTitle("...");

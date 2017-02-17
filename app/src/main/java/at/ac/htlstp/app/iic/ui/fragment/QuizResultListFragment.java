@@ -1,5 +1,6 @@
 package at.ac.htlstp.app.iic.ui.fragment;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
@@ -50,6 +51,15 @@ public class QuizResultListFragment extends IICFragment implements SwipeRefreshL
         super.onCreate(savedInstanceState);
     }
 
+    private class BackgroundTask extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            mCocoLib = CocoLibSingleton.getInstance(getContext());
+            return null;
+        }
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.quiz_result_list_fragment, container, false);
@@ -59,7 +69,10 @@ public class QuizResultListFragment extends IICFragment implements SwipeRefreshL
         super.title = getContext().getString(R.string.quiz_results);
         super.action_key = MainActivity.FRAGMENT_KEY_QUIZ_RESULT_LIST;
 
-        mCocoLib = CocoLibSingleton.getInstance(getContext());
+        //mCocoLib = CocoLibSingleton.getInstance(getContext());
+        BackgroundTask backgroundTask = new BackgroundTask();
+        backgroundTask.execute();
+
         mQuizController = mCocoLib.create(QuizController.class);
 
         refreshLayout.setColorSchemeColors(ContextCompat.getColor(getContext(), R.color.colorPrimary),
